@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>VACUUMPRO - Bombas de Vácuo em Cascavel - PR | Especialista Ezequiel Santos</title>
+    <meta name="description" content="Especialista em manutenção de bombas de vácuo, venda de peças e óleo industrial em Cascavel e região. VacuumPro: Soluções industriais com tecnologia de ponta.">
+    <meta name="keywords" content="bombas de vácuo Cascavel, manutenção industrial PR, troca de óleo, venda de peças vácuo, Ezequiel Santos, VacuumPro">
+    <meta name="author" content="VACUUMPRO">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16735454532"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-16735454532'); // ID do Google Ads
+    </script>
+
+    <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.open(url, '_blank');
+        }
+      };
+      // Nota: Substitua o rótulo abaixo pelo correto da sua conta se necessário
+      gtag('event', 'conversion', {
+          'send_to': 'AW-16735454532/SEU_ROTULO_AQUI', 
+          'value': 1.0,
+          'currency': 'BRL',
+          'event_callback': callback
+      });
+      return false;
+    }
+    </script>
+
+    <style>
+        /* --- ESTILOS (CSS) --- */
+        :root {
+            --cor-primaria: #1A1A1A; /* Preto Industrial (Chumbo escuro) */
+            --cor-secundaria: #C5A028; /* Dourado/Gold Industrial */
+            --cor-cta: #25D366; /* Verde WhatsApp */
+            --cor-fundo: #F4F4F4; /* Cinza bem claro para o fundo */
+            --cor-texto: #333333;
+            --cor-branca: #FFFFFF;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Montserrat', sans-serif; scroll-behavior: smooth; }
+        body { line-height: 1.6; color: var(--cor-texto); background-color: var(--cor-fundo); }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        /* HEADER */
+        header { background-color: var(--cor-primaria); box-shadow: 0 4px 10px rgba(0,0,0,0.2); position: sticky; top: 0; z-index: 1000; border-bottom: 3px solid var(--cor-secundaria); }
+        .header-content { display: flex; justify-content: space-between; align-items: center; padding: 15px 0; }
+        
+        /* Logo estilo texto */
+        .logo a { color: var(--cor-branca); text-decoration: none; font-size: 1.6em; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; }
+        .logo span { color: var(--cor-secundaria); }
+        
+        /* MENU */
+        nav ul { list-style: none; display: flex; gap: 25px; }
+        .nav-link { color: #ddd; text-decoration: none; font-weight: 500; transition: 0.3s; font-size: 0.95em; text-transform: uppercase; }
+        .nav-link:hover, .nav-link.active { color: var(--cor-secundaria); }
+        
+        .hamburger { display: none; font-size: 1.5rem; color: var(--cor-secundaria); cursor: pointer; }
+
+        /* HERO SECTION */
+        #hero {
+            /* Fundo escuro elegante */
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)), url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover; background-position: center; background-attachment: fixed;
+            color: white; text-align: center; padding: 120px 20px; position: relative;
+        }
+        #hero h1 { font-size: 3em; margin-bottom: 15px; font-weight: 800; letter-spacing: -1px; text-transform: uppercase; }
+        #hero h1 span { color: var(--cor-secundaria); }
+        #hero h2 { font-size: 1.2em; font-weight: 400; margin-bottom: 30px; opacity: 0.9; max-width: 800px; margin-left: auto; margin-right: auto; }
+        
+        .badge-geo { 
+            background: rgba(197, 160, 40, 0.2); border: 1px solid var(--cor-secundaria); color: var(--cor-secundaria);
+            padding: 8px 20px; border-radius: 4px; font-size: 0.85em; font-weight: 600; text-transform: uppercase; margin-bottom: 25px; display: inline-block; letter-spacing: 1px;
+        }
+        
+        .btn-cta {
+            background-color: var(--cor-secundaria); color: var(--cor-primaria); padding: 15px 40px; border-radius: 4px;
+            text-decoration: none; font-weight: 800; font-size: 1.1em; text-transform: uppercase; letter-spacing: 1px;
+            transition: 0.3s; display: inline-block; border: 2px solid var(--cor-secundaria);
+        }
+        .btn-cta:hover { background-color: transparent; color: var(--cor-secundaria); }
+
+        /* SECTIONS GERAL */
+        section { padding: 80px 0; }
+        .section-title { text-align: center; font-size: 2.2em; color: var(--cor-primaria); margin-bottom: 50px; font-weight: 800; text-transform: uppercase; }
+        .section-title span { color: var(--cor-secundaria); }
+
+        /* SERVIÇOS */
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+        .service-card {
+            background: white; border-radius: 0px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            transition: 0.3s; border-bottom: 4px solid transparent; padding: 40px 30px; position: relative; overflow: hidden;
+        }
+        .service-card:hover { transform: translateY(-5px); border-bottom-color: var(--cor-secundaria); }
+        .service-icon { font-size: 2.5em; color: var(--cor-primaria); margin-bottom: 20px; transition: 0.3s; }
+        .service-card:hover .service-icon { color: var(--cor-secundaria); }
+        .service-card h3 { color: var(--cor-primaria); margin-bottom: 15px; font-size: 1.2em; font-weight: 700; text-transform: uppercase; }
+        
+        /* Destaque para Venda de Peças */
+        .service-card.highlight { background: #fff; border: 2px solid var(--cor-secundaria); }
+        .service-card.highlight::before { content: 'EM DESTAQUE'; position: absolute; top: 0; right: 0; background: var(--cor-secundaria); color: #000; font-size: 0.7em; padding: 5px 10px; font-weight: bold; }
+
+        /* DIFERENCIAIS */
+        #diferenciais { background-color: var(--cor-primaria); color: white; }
+        #diferenciais .section-title { color: white; }
+        .diff-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; text-align: center; }
+        .diff-item i { font-size: 3em; color: var(--cor-secundaria); margin-bottom: 20px; }
+        .diff-item h3 { margin-bottom: 10px; font-size: 1.3em; }
+        .diff-item p { color: #aaa; }
+
+        /* MAPA */
+        #localizacao { background: white; padding-bottom: 0; }
+        .map-container { width: 100%; height: 400px; margin-top: 30px; }
+        iframe { width: 100%; height: 100%; border: 0; filter: grayscale(100%); transition: 0.3s; }
+        iframe:hover { filter: grayscale(0%); }
+
+        /* CONTATO */
+        #contato { background-color: #f9f9f9; }
+        .contact-container { display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; }
+        .contact-box { 
+            background: white; padding: 40px; flex: 1; min-width: 300px; text-align: center; 
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05); border-top: 3px solid var(--cor-primaria);
+        }
+        .contact-box h3 { color: var(--cor-primaria); margin-bottom: 5px; font-weight: 800; text-transform: uppercase; }
+        .contact-box .cargo { display: block; color: var(--cor-secundaria); font-weight: 600; margin-bottom: 20px; font-size: 0.9em; }
+        
+        .contact-btn {
+            display: flex; align-items: center; justify-content: center; gap: 10px;
+            background: #25D366; color: white; padding: 12px; margin: 10px 0;
+            text-decoration: none; border-radius: 4px; font-weight: 600; transition: 0.2s;
+        }
+        .contact-btn:hover { background: #1ebc57; }
+        .email-link { color: #666; text-decoration: none; font-size: 0.9em; }
+        .email-link:hover { color: var(--cor-primaria); }
+
+        /* FOOTER */
+        footer { background: #111; color: white; text-align: center; padding: 40px 0 20px; border-top: 3px solid var(--cor-secundaria); }
+        footer p { opacity: 0.7; font-size: 0.9em; margin-bottom: 5px; }
+        footer .local-badge { color: var(--cor-secundaria); font-weight: 600; opacity: 1; }
+
+        /* WHATSAPP FLUTUANTE */
+        .whatsapp-float {
+            position: fixed; bottom: 25px; right: 25px; background-color: #25D366; color: white;
+            width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center;
+            font-size: 30px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); z-index: 2000; transition: 0.3s; text-decoration: none;
+        }
+        .whatsapp-float:hover { transform: scale(1.1); }
+        .whatsapp-pulse { position: absolute; width: 100%; height: 100%; background: #25D366; border-radius: 50%; z-index: -1; animation: pulse 2s infinite; opacity: 0.5; }
+        @keyframes pulse { 0% { transform: scale(1); opacity: 0.8; } 100% { transform: scale(1.5); opacity: 0; } }
+
+        /* RESPONSIVIDADE */
+        @media (max-width: 768px) {
+            nav ul { display: none; flex-direction: column; position: absolute; top: 70px; left: 0; width: 100%; background: var(--cor-primaria); padding: 20px; }
+            nav ul.open { display: flex; }
+            .hamburger { display: block; }
+            #hero h1 { font-size: 2em; }
+        }
+    </style>
+</head>
+<body>
+
+    <header id="header">
+        <div class="container header-content">
+            <div class="logo">
+                <a href="#">VACUUM<span>PRO</span></a>
+            </div>
+            <div class="hamburger" id="hamburgerBtn">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav id="mobileMenu">
+                <ul>
+                    <li><a href="#hero" class="nav-link active">Início</a></li>
+                    <li><a href="#servicos" class="nav-link">Serviços e Peças</a></li>
+                    <li><a href="#diferenciais" class="nav-link">Diferenciais</a></li>
+                    <li><a href="#localizacao" class="nav-link">Localização</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <div class="badge-geo"><i class="fas fa-map-marker-alt"></i> Atendemos Cascavel-PR e Região</div>
+            <h1>ESPECIALISTAS EM<br><span>BOMBAS DE VÁCUO</span></h1>
+            <h2>Manutenção, recuperação, venda de peças e análise técnica para a indústria com padrão de qualidade superior.</h2>
+            
+            <a href="#" onclick="return gtag_report_conversion('https://wa.me/5545991392746?text=Olá,%20vi%20o%20site%20da%20VacuumPro%20e%20gostaria%20de%20um%20orçamento.');" class="btn-cta">
+                <i class="fab fa-whatsapp"></i> Falar com Especialista
+            </a>
+        </div>
+    </section>
+
+    <section id="servicos">
+        <div class="container">
+            <h2 class="section-title">Nossas <span>Soluções</span></h2>
+            <div class="services-grid">
+                
+                <div class="service-card highlight">
+                    <i class="fas fa-cogs service-icon"></i>
+                    <h3>Venda de Peças</h3>
+                    <p>Fornecimento de peças de reposição de alta qualidade para diversas marcas e modelos de bombas de vácuo.</p>
+                </div>
+
+                <div class="service-card">
+                    <i class="fas fa-tools service-icon"></i>
+                    <h3>Manutenção Especializada</h3>
+                    <p>Manutenção preventiva e corretiva. Garantimos o funcionamento ideal do seu equipamento industrial.</p>
+                </div>
+                
+                <div class="service-card">
+                    <i class="fas fa-oil-can service-icon"></i>
+                    <h3>Troca de Óleo e Filtros</h3>
+                    <p>Utilizamos insumos de alta performance para garantir a longevidade da sua bomba de vácuo.</p>
+                </div>
+                
+                <div class="service-card">
+                    <i class="fas fa-chart-line service-icon"></i>
+                    <h3>Análise de Vibração</h3>
+                    <p>Diagnóstico preciso de ruído, temperatura e vibração para antecipar falhas e evitar paradas.</p>
+                </div>
+                
+                <div class="service-card">
+                    <i class="fas fa-recycle service-icon"></i>
+                    <h3>Revitalização</h3>
+                    <p>Recuperação total de equipamentos desgastados, trazendo-os de volta às especificações de fábrica.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="diferenciais">
+        <div class="container">
+            <h2 class="section-title">Diferenciais <span>VacuumPro</span></h2>
+            <div class="diff-grid">
+                <div class="diff-item">
+                    <i class="fas fa-industry"></i>
+                    <h3>Redução de Paradas</h3>
+                    <p>Foco total em manter sua linha de produção rodando sem interrupções inesperadas.</p>
+                </div>
+                <div class="diff-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Maior Vida Útil</h3>
+                    <p>Técnicas avançadas que prolongam a durabilidade do seu ativo imobilizado.</p>
+                </div>
+                <div class="diff-item">
+                    <i class="fas fa-user-tie"></i>
+                    <h3>Ezequiel Santos</h3>
+                    <p>Atendimento direto com especialista que entende a fundo do seu equipamento.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="localizacao">
+        <div class="container">
+            <h2 class="section-title">Atendimento em <span>Cascavel - PR</span></h2>
+            <p style="text-align: center; max-width: 600px; margin: 0 auto;">Estamos estrategicamente localizados para atender Cascavel e toda a região oeste do Paraná com agilidade.</p>
+            
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115682.95156667705!2d-53.53509930818296!3d-24.96044738722831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f3d40636605067%3A0x629cb8c0e66d2146!2sCascavel%2C%20PR!5e0!3m2!1spt-BR!2sbr!4v1709555555555!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <div class="container">
+            <h2 class="section-title">Fale Conosco</h2>
+            <div class="contact-container">
+                
+                <div class="contact-box">
+                    <h3>Ezequiel Santos</h3>
+                    <span class="cargo">Especialista Técnico</span>
+                    <p>Dúvidas técnicas, diagnósticos e manutenção.</p>
+                    
+                    <a href="#" onclick="return gtag_report_conversion('https://wa.me/5545991392746');" class="contact-btn">
+                        <i class="fab fa-whatsapp"></i> (45) 9 9139-2746
+                    </a>
+                    
+                    <a href="mailto:ezequielmiranda250@gmail.com" class="email-link">ezequielmiranda250@gmail.com</a>
+                </div>
+
+                <div class="contact-box">
+                    <h3>Vendas e Peças</h3>
+                    <span class="cargo">Comercial</span>
+                    <p>Orçamentos de peças, filtros e agendamentos.</p>
+                    
+                    <a href="#" onclick="return gtag_report_conversion('https://wa.me/5545991312026');" class="contact-btn" style="background-color: var(--cor-primaria);">
+                        <i class="fab fa-whatsapp"></i> (45) 9 9131-2026
+                    </a>
+                    
+                    <a href="mailto:vacuumprosolucoes@outlook.com" class="email-link">vacuumprosolucoes@outlook.com</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="currentYear"></span> VACUUMPRO - Soluções em Vácuo Industrial. Todos os direitos reservados.</p>
+            
+            <p class="local-badge"><i class="fas fa-map-marker-alt"></i> Atendemos Cascavel-PR e região</p>
+        </div>
+    </footer>
+
+    <a href="#" onclick="return gtag_report_conversion('https://wa.me/5545991392746?text=Olá,%20preciso%20de%20assistência%20técnica.');" class="whatsapp-float">
+        <div class="whatsapp-pulse"></div>
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script>
+        // ATUALIZA O ANO AUTOMATICAMENTE (Para 2026, 2027...)
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Menu Mobile
+        const hamburgerBtn = document.getElementById('hamburgerBtn');
+        const mobileMenu = document.querySelector('#mobileMenu ul');
+        const icon = hamburgerBtn.querySelector('i');
+
+        hamburgerBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('open');
+            if(mobileMenu.classList.contains('open')){
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('open');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            });
+        });
+    </script>
+</body>
+</html>
