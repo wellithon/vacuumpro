@@ -1,11 +1,11 @@
 
         :root {
-            --cor-primaria: #003366;
-            --cor-secundaria: #0060C7;
+            --cor-primaria: #1A1A1A;
+            --cor-secundaria: #C5A028;
             --cor-cta: #25D366;
             --cor-fundo: #FFFFFF;
             --cor-texto: #333333;
-            --cor-acento-animacao: #FFD700;
+            --cor-acento-animacao: #E5C048;
         }
 
         * {
@@ -67,7 +67,7 @@
 
         /* HERO SECTION & CTA BUTTON */
         #hero {
-            background: linear-gradient(135deg, var(--cor-primaria) 0%, #004587 100%);
+            background: linear-gradient(135deg, var(--cor-primaria) 0%, #333333 100%);
             color: var(--cor-fundo); text-align: center; padding: 120px 20px 80px; position: relative; z-index: 1;
         }
         #hero h1 { font-size: 3em; margin-bottom: 15px; font-weight: 700; }
